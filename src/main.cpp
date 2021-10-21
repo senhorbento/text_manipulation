@@ -18,15 +18,15 @@ void LimparTela() {
 void Pause(int v) {
 	switch (v) {
 	case 1: cout << "Voce pode encontrar o resultado no arquivo resultado.txt\n\n"
-                 << "Pressione uma tecla para finalizar o programa e abrir a pasta de destino!\n"; 
-                 getchar(); break;
+                     << "Pressione uma tecla para finalizar o programa e abrir a pasta de destino!\n"; 
+                     getchar(); break;
 	case 2: cout << "Parece que voce esta executando o programa pela primeira vez.\n"
 	             << "Acesse a pasta txt e siga as instrucoes dentro de cada arquivo =\)\n\n"
-				 << "Pressione uma tecla para finalizar o programa e abrir a pasta!\n"; 
-                 getchar(); break;
-    case 3: cout << "\nLista finalizada!\n"
-                 << "Pressione uma tecla para continuar.\n"; 
-                 getchar(); break;
+		     << "Pressione uma tecla para finalizar o programa e abrir a pasta!\n"; 
+                     getchar(); break;
+        case 3: cout << "\nLista finalizada!\n"
+                     << "Pressione uma tecla para continuar.\n"; 
+                     getchar(); break;
 	}
 }
 
@@ -49,7 +49,7 @@ void CriarArquivo(string txt){
 }
 
 int main() {
-	string leitura, ip;
+	string leitura;
 	list <string> lista1, lista2, resultado;
 	ifstream input_file;
 	ofstream output_file;
@@ -65,43 +65,43 @@ int main() {
 	}
 
 	LimparTela();
-    input_file.open(_LISTA1_);
-    if (input_file.is_open()) {
-        while (!input_file.eof()) {
-            getline(input_file, leitura);
-            if (leitura != "\0") 
-                lista1.push_back(leitura);
+        input_file.open(_LISTA1_);
+        if (input_file.is_open()) {
+            while (!input_file.eof()) {
+                 getline(input_file, leitura);
+                 if (leitura != "\0") 
+                         lista1.push_back(leitura);
+            }
+            input_file.close();
         }
-        input_file.close();
-    }
 
-    input_file.open(_LISTA2_);
-    if (input_file.is_open()) {
-        while (!input_file.eof()) {
-            getline(input_file, leitura);
-            if (leitura != "\0")
-                lista2.push_back(leitura);
+        input_file.open(_LISTA2_);
+        if (input_file.is_open()) {
+            while (!input_file.eof()) {
+                getline(input_file, leitura);
+            	if (leitura != "\0")
+                	lista2.push_back(leitura);
+            }
+            input_file.close();
         }
-        input_file.close();
-    }
 
-    for(auto linha1 : lista1)
-        for (auto linha2 : lista2)
-            if(linha1 == linha2)
-                resultado.push_back(linha1);
-    LimparTela();
+    	for(auto linha1 : lista1)
+   	     for (auto linha2 : lista2)
+    	        if(linha1 == linha2)
+  	              resultado.push_back(linha1);
+    	LimparTela();
 
-    cout << "Linhas repetidas:" << endl << endl;
-    output_file.open(_RESULTADO_);
-    for (auto linha : resultado) {
-        output_file << linha << endl;
-        cout << linha << endl;
-    }
-    output_file.close();
+  	cout << "Linhas repetidas:" << endl << endl;
+ 	output_file.open(_RESULTADO_);
+ 	for (auto linha : resultado) {
+ 		output_file << linha << endl;
+ 	        cout << linha << endl;
+ 	}
+ 	output_file.close();
 
-    Pause(3);
-    LimparTela();
-    Pause(1);
-    system("explorer.exe /e, /n, txt");
+	Pause(3);
+	LimparTela();
+ 	Pause(1);
+  	system("explorer.exe /e, /n, txt");
 	return 0;
 }
