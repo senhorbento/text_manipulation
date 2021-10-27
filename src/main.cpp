@@ -22,7 +22,7 @@ void Pause(int v) {
                      getchar(); break;
 	case 2: cout << "Parece que voce esta executando o programa pela primeira vez.\n"
 	             << "Acesse a pasta txt e siga as instrucoes dentro de cada arquivo =\)\n\n"
-		     << "Pressione uma tecla para finalizar o programa e abrir a pasta!\n"; 
+		     	 << "Pressione uma tecla para finalizar o programa e abrir a pasta!\n"; 
                      getchar(); break;
         case 3: cout << "\nLista finalizada!\n"
                      << "Pressione uma tecla para continuar.\n"; 
