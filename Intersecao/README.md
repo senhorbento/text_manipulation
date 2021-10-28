@@ -1,7 +1,7 @@
 # Interseção / Intersection
 Um simples programa no qual compara 2 textos e determina quais linhas são encontradas em ambos os arquivos, exemplo a baixo.  
 *(EN) A simple program in wich compare 2 texts and determine which lines are found in both archives, example below.*  
-
+# 
 ### Exemplo / Example:
 
 lista1.txt
