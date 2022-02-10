@@ -5,7 +5,7 @@ using namespace std;
 #define _MAX_QTD_ 100
 
 int main() {
-	string prefix = "https://api.whatsapp.com/send/?phone=55";
+	string prefix = "https://api.whatsapp.com/send/?phone=";
 	string resultado[_MAX_QTD_], leitura;
 
 	for(int i=0; i<_MAX_QTD_; i++){
