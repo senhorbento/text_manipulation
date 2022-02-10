@@ -4,13 +4,13 @@ Um simples programa no qual dado uma lista de números telefônicos o mesmo adic
 # 
 ### Exemplo / Example:
 
-input
+Input
 ~~~
     1234
     1011
 ~~~
 
-output
+Output
 ~~~
     https://api.whatsapp.com/send/?phone=1234
     https://api.whatsapp.com/send/?phone=1011
