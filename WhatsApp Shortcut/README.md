@@ -1,6 +1,6 @@
 # WhatsApp Shortcut
-Um simples programa no qual dado uma lista de números telefônicos o mesmo adiciona o link para que o mesmo possa ser utilizado no WhatsApp web.  
-*(EN) A simple program in which given a list of telefonic numbers add the link to be used in WhatsApp web.*  
+Um simples programa no qual dado uma lista de números telefônicos o mesmo adiciona o link para que o mesmo possa ser utilizado no WhatsApp Web.  
+*(EN) A simple program in which given a list of telefonic numbers add the link to be used in WhatsApp Web.*  
 # 
 ### Exemplo / Example:
 
